@@ -11,7 +11,9 @@ const arr = [
 
 const count = arr.reduce((acc, element) => {
     acc[element] = (acc[element] || 0) + 1;
+    (acc[element] >= 3) ? console.log(acc[element]) : "";
     return acc;
+    
 }, {});
 
 console.log(count);
