@@ -1,0 +1,29 @@
+/*Mobile devices screen < 688px
+tablets < 992px
+PC > 1312px
+*/
+
+.tablet, .pc {
+    display: none;
+}
+
+@media only screen and  (min-width: 689px){
+    .tablet{
+        display: block;
+    }
+    .mobile{
+        display: none;
+    }
+}
+
+@media only screen and  (min-width: 993px){
+    .pc{
+        display: block;
+    }
+    .tablet{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+}
